@@ -116,7 +116,12 @@
       "react-app"
     ],
     "plugins": [
-      ["@babel/plugin-proposal-decorators", { "legacy": true }]
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ]
     ]
   },
   "devDependencies": {
@@ -124,7 +129,6 @@
     "cssnano": "^4.1.7",
     "cssnano-preset-advanced": "^4.0.5",
     "postcss-aspect-ratio-mini": "0.0.2",
-    "postcss-cssnext": "^3.1.0",
     "postcss-px-to-viewport": "0.0.3",
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1"

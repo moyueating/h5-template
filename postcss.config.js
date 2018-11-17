@@ -1,13 +1,14 @@
 module.exports = {
   "plugins": [
     require('postcss-flexbugs-fixes'),
-    require("autoprefixer")({
-      flexbox: 'no-2009',
+    require('postcss-preset-env')({
+      autoprefixer: {
+        flexbox: 'no-2009',
+      },
       stage: 3,
     }),
     require("postcss-aspect-ratio-mini"),
     require("postcss-write-svg")({ utf8: false }),
-    require("postcss-cssnext"),
     require("postcss-px-to-viewport")({
       viewportWidth: 750,
       viewportHeight: 1334,
